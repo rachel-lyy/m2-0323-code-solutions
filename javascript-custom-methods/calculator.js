@@ -31,7 +31,7 @@ const calculator = {
     var sum = 0;
     for (let i = 0; i < numbers.length; i++) {
       sum += numbers[i];
-    } var average = sum / numbers.length;
-    return average;
+    } var avg = sum / numbers.length;
+    return avg;
   }
 };
