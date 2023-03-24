@@ -7,7 +7,7 @@ class Circle extends Square {
   }
 
   printRadius() {
-    const value = this.printSquare() + ' Width is ' + this.radius;
+    const value = this.printSquare() + ' Radius is ' + this.radius;
     return value;
   }
 }
