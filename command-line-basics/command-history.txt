@@ -1,0 +1,324 @@
+    1  ls
+    2  git branch javascript-custom-methods
+    3  git switch javascript-custom-methods
+    4  ls
+    5  git status
+    6  git commit -m "Completed javascript-custom-methods exercise"
+    7  git add
+    8  git add javascript-custom-methods/
+    9  git commit -m "Completed javascript-custom-methods exercise"
+   10  git push origin m2-0323-code-solutions
+   11  git statis
+   12  git status
+   13  git add javascript-custom-methods
+   14  git status
+   15  git add
+   16  git add .
+   17  git status
+   18  git swtich
+   19  git switch main
+   20  git switch javascript
+   21  git switch javascript-custom-methods
+   22  git status
+   23  git add *
+   24  git status
+   25  git commit -m "Completed javascript-custom-methods exercise."
+   26  git push origin javascript-custom-methods
+   27  git config --global user.name 
+   28  git config --global user.email
+   29  git config --global --list
+   30  git pull
+   31  git branch javascript-this
+   32  git switch javascript-this
+   33  git status
+   34  git add javascript-this
+   35  git status
+   36  git commit -m "Completed javascript-this exercise."
+   37  git status
+   38  git push origin javascript-this
+   39  git switch main
+   40  git pull
+   41  git pull
+   42  git branch javascript-prototypes
+   43  git switch javascript-prototypes
+   44  git status
+   45  git add javascript-prototypes
+   46  git commit -m "Completed javascript-prototypes exercise."
+   47  git push origin javascript-prototypes
+   48  git switch master
+   49  git switch main
+   50  git pull 
+   51  git branch javascript-constructors
+   52  git switch javascript-constructors
+   53  git status
+   54  git add javascript-constructors
+   55  git commit -m "Completed javascript-constructors exercise."
+   56  git push origin javascript-constructors
+   57  git switch main
+   58  git switch javascript-constructors
+   59  git status
+   60  git add javascript-constructors
+   61  git commit -m "Made changes to example-constructor.js per Ryan feedback."
+   62  git push origin javascript-constructors
+   63  git switch master
+   64  git swithc main
+   65  git switch main
+   66  git pull
+   67  git branch es6-const-let
+   68  git switch es6-const-let
+   69  git status
+   70  git add es6-const-let
+   71  git commit -m "Completed es6-const-let exercise."
+   72  git push origin es6-const-let
+   73  git switch main
+   74  git pull
+   75  git branch es6-classes
+   76  git switch es6-classes
+   77  git status
+   78  git add
+   79  git add es6-classes
+   80  git commit -m "Completed es6-classes exercise."
+   81  git push origin es6-classes
+   82  git status
+   83  git add es6-classes/circle.js
+   84  git commit -m "Typo"
+   85  git push origin es6-classes
+   86  git switch main
+   87  git switch es6-classes
+   88  git status
+   89  git add es6-classes
+   90  git commit -m "Made changes to circle, shape and square files."
+   91  git push origin es6-classes
+   92  git switch main
+   93  git branch javascript-bank
+   94  git switch javascript-bank
+   95  git switch main
+   96  git pull
+   97  git switch javascript-bank
+   98  git pull
+   99  git switch main
+  100  git branch es6-template-literals
+  101  git switch es6-template-literals
+  102  git status
+  103  git add es6-template-literals
+  104  git commit -m 
+  105  git commit -m "Completed es6-template-literals exercise."
+  106  git push origin es6-template-literals
+  107  git switch javascript-bank
+  108  git switch main
+  109  git branch es6-destructuring
+  110  git switch es6-destructuring
+  111  git add es6-destructuring
+  112  git  commit -m 
+  113  git  commit -m "Completed es6-destructuring exercise."
+  114  git add es6-destructuring
+  115  git status
+  116  git add es6-destructuring
+  117  git push origin es6-destructuring
+  118  git status
+  119  git commit -m 
+  120  git commit -m "Completed es6-destructuring exercise."
+  121  git push origin es6-destructuring
+  122  git status
+  123  git commit -m "Console log typo edit"
+  124  git add es6-destructuring
+  125  git commit -m "Console log typo edit"
+  126  git switch main
+  127  git pull
+  128  git switch javascript-bank
+  129  git pull
+  130  git status
+  131  git add javascript-bank
+  132  git commit -m "Completed javascript-bank exercise."
+  133  git push origin javascript-bank
+  134  git pull
+  135  git switch main
+  136  git pull
+  137  git branch es6-arrow-functions
+  138  git switch es6-arrow-functions
+  139  git status
+  140  git add es6-arrow-functions
+  141  git commit -m "Completed es6-arrow-functions exercise."
+  142  git push origin es6-arrow-functions
+  143  git switch main
+  144  git pull
+  145  git branch es6-operators
+  146  git switch es6-operators
+  147  git status
+  148  git add es6-operators
+  149  git commit -m 
+  150  git commit -m "Completed es6-operators exercise."
+  151  git push origin es6-operators
+  152  git switch main
+  153  git pull
+  154  git branch javascript-timers
+  155  git switch javascript-timers
+  156  git switch array-methods
+  157  git branch array-methods
+  158  git switch array-methods
+  159  git status
+  160  git add array-methods
+  161  git commit -m "Completed array-methods exercise."
+  162  git add array-methods
+  163  git commit -m "Completed array-methods exercise."
+  164  git push origin array-methods
+  165  git switch main
+  166  git pull
+  167  http https://example.com
+  168  http GET https://example.com
+  169  http --verbose https://example.com
+  170  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  171  http --body GET https://example.com > http-messages/index.html
+  172  git add http-messages
+  173  git commit -m "Completed http-messages exercise."
+  174  git push origin http-messages
+  175  git switch main
+  176  git pull
+  177  git branch javascript-ajax
+  178  git switch javascript-ajax
+  179  clear
+  180  git add javascript-ajax
+  181  git commit -m "Completed javascript-ajax exercise."
+  182  git push origin javascript-ajax
+  183  git switch main
+  184  git pull
+  185  http https://www.fisheries.noaa.gov/topic/sustainable-seafood
+  186  http --verbose https://www.fisheries.noaa.gov/topic/sustainable-seafood
+  187  http GET https://www.fisheries.noaa.gov/topic/sustainable-seafood
+  188  http GET https://api.mydramalist.com/v1/search/titles
+  189  http get https://api.disneyapi.dev/characters
+  190  http get https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&callback=mycallback
+  191  http get https://openlibrary.org/api/books?bibkeys=ISBN:0593440870
+  192  http https://openlibrary.org/api/books?bibkeys=ISBN:0593440870&format=json
+  193  git pull
+  194  git switch javascript-timers
+  195  git add javascript-timers
+  196  git commit -m "Completed javascript-timers exercise."
+  197  git add javascript-timers
+  198  git commit -m "Completed javascript-timers exercise."
+  199  git push origin javascript-timers
+  200  git switch main
+  201  git pull
+  202  git branch javascript-carousel
+  203  git switch javascript-carousel
+  204  git pull
+  205  git switch main
+  206  git pull
+  207  git branch http-messages
+  208  git switch http-messages
+  209  cd http-messages
+  210  clear
+  211  http http://example.com
+  212  http get https://openlibrary.org/api/books?bibkeys=ISBN:0201558025,LCCN:93005405&callback=processBooks
+  213   clear
+  214  https://openlibrary.org/books/OL7353617M.json clear
+  215  clear
+  216  http get https://openlibrary.org/books/isbn:0593440870
+  217  http get https://openlibrary.org/isbn/0593440870.json
+  218  http get https://openlibrary.org/isbn/0593440870
+  219  http GET https://openlibrary.org/isbn/9780140328721
+  220  http get https://openlibrary.org/api/books?bibkeys=ISBN:0201558025,LCCN:93005405&format=json
+  221  clear
+  222  http get https://openlibrary.org/api/books?bibkeys=ISBN:0201558025,LCCN:93005405&format=json?jscmd=data
+  223  clear
+  224  http GET https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=data&format=json'
+  225  clear
+  226  http GET https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=data&format=json
+  227  http get https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=details&format=json
+  228  clear
+  229  http GET --verbose https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=details&format=json
+  230   clear
+  231  http --json https://openlibrary.org/api/books?bibkeys=ISBN:9780980200447&jscmd=details&format=json
+  232  git pull
+  233  pyton -v
+  234  python3
+  235  cd node-intro
+  236  ls
+  237  cd workspaces
+  238  cd m2-03230-code-solutions
+  239  cd node-intro
+  240  cd /workspaces/m2-0323-code-solutions
+  241  cd node-intro
+  242  clear
+  243  git branch node-intro
+  244  git switch node-intro
+  245  node --version
+  246  node hello-node.js
+  247  node
+  248  cd ..
+  249  git status
+  250  git add node-intro
+  251  git commit -m "Completed node-intro exercise."
+  252  git push origin node-intro
+  253  clear
+  254  git switch main
+  255  git branch command-line-basics
+  256  git switch command-line-basics
+  257  cd command-line-basics
+  258  man man
+  259  man cat
+  260  cat laziness.txt
+  261  cat impatience.txt
+  262  cat hubris.txt
+  263  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  264  cat three-virtues.txt
+  265  man ls
+  266  ls
+  267  ls -a
+  268  las -F
+  269  ls -F
+  270  ls lfz-staff/
+  271  ls lfz-staff/ -a
+  272  ls lfz-staff/ -F
+  273  ls -aF lfz-staff > lfz-staff/contents.txt
+  274  cat lfz-staff/contents.txt
+  275  man pwd
+  276  man pwd
+  277  pwd
+  278  pwd > i-was-here.txt
+  279  ls 
+  280  cat i-was-here.txt
+  281  man echo
+  282  echo "Hello, World!"
+  283  echo 'Hello, World!' > hello.txt
+  284  ls hello.text
+  285  ls hello.txt
+  286  cat hello.txt
+  287  man touch
+  288  touch tag-youre-it.txt
+  289  touch snoot/boop.txt
+  290  ls snoot/
+  291  man mkdir
+  292  mkdir parent
+  293  ls parent/
+  294  ls parent
+  295  ls
+  296  mkdir -p
+  297  man mkdir
+  298  mkdir -p child
+  299  mkdir -p parent/child/grandchild
+  300  ls -a
+  301  ls -a parent/child/grandchild
+  302  man mv
+  303  mv pokiemans
+  304  mv pokiemans > pokemon
+  305  man mv
+  306  man pokiemans pokemon
+  307  mv pokiemans pokemon
+  308  mv pokemon pokiemans
+  309  mv pokiemans pokemon
+  310  ls
+  311  man rm
+  312  rm lol.txt
+  313  ls
+  314  rm -r kill-me/
+  315  ls
+  316  man cp
+  317  cp and-then.txt no-and-then.txt
+  318  ls
+  319  cat and-then.txt
+  320  cat no-and-then.text
+  321  cat no-and-then.txt
+  322  man history
+  323  history
+  324  history > command-history.txt
