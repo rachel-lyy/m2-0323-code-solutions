@@ -22,10 +22,11 @@ const grades = {
   }
 };
 app.get('/api/grades', (req, res) => {
+  const allGrades = [];
   for (const x in grades) {
-    console.dir(x);
-    res.json(grades);
+    allGrades.push(grades[x]);
   }
+  res.json(allGrades);
 });
 
 app.listen(port, () => {
