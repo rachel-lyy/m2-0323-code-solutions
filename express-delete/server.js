@@ -33,8 +33,7 @@ app.get('/api/grades', (req, res) => {
 app.delete('/api/grades/:id', (req, res) => {
   const findRecord = req.params.id;
   delete grades[findRecord];
-  res.json(grades);
-  res.status(204);
+  res.status(204).json(grades);
 });
 
 app.listen(port, () => {
