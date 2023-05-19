@@ -22,12 +22,11 @@ async function processFiles(url, content) {
   }
 }
 
-var data = JSON.parse(await getFiles('data.json'));
-
 app.use(express.json());
 
 // Clients can GET a list of notes
 app.get('/api/notes', async (req, res) => {
+  var data = JSON.parse(await getFiles('data.json'));
   try {
     res.json(Object.values(data.notes));
   } catch (error) {
@@ -37,21 +36,23 @@ app.get('/api/notes', async (req, res) => {
 });
 
 // Client can GET a note with ID
-app.get('/api/notes/:id', (req, res) => {
+app.get('/api/notes/:id', async (req, res) => {
+  var data = JSON.parse(await getFiles('data.json'));
   const findRecord = req.params.id;
   const matchingID = data.notes[findRecord];
 
   if (findRecord <= 0 || !Number.isInteger(Number(findRecord))) {
     res.status(400).json({ error: 'id must be a positive interger' });
   } else if (!data.notes[findRecord]) {
-    res.status(200).json({ error: `cannot find note with id ${findRecord}` });
+    res.status(404).json({ error: `cannot find note with id ${findRecord}` });
   } else {
-    res.json(matchingID);
+    res.status(200).json({ matchingID });
   }
 });
 
 // Client can POST a new note
-app.post('/api/notes', (req, res) => {
+app.post('/api/notes', async (req, res) => {
+  var data = JSON.parse(await getFiles('data.json'));
   const newContent = req.body.content;
   if (!newContent) {
     res.status(400).json({ error: 'content is a required field' });
@@ -72,7 +73,8 @@ app.post('/api/notes', (req, res) => {
 });
 
 // Client can DELETE a note by ID
-app.delete('/api/notes/:id', (req, res) => {
+app.delete('/api/notes/:id', async (req, res) => {
+  var data = JSON.parse(await getFiles('data.json'));
   const findRecord = req.params.id;
   const matchingID = data.notes[findRecord];
 
@@ -88,7 +90,8 @@ app.delete('/api/notes/:id', (req, res) => {
 });
 
 // Client can replace a note PUT by ID
-app.put('/api/notes/:id', (req, res) => {
+app.put('/api/notes/:id', async (req, res) => {
+  var data = JSON.parse(await getFiles('data.json'));
   const findRecord = req.params.id;
   const matchingID = data.notes[findRecord];
   const newContent = req.body.content;
