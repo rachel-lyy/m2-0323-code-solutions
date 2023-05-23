@@ -8,7 +8,7 @@ app.use(express.json());
 // Clients can GET a list of notes
 app.get('/api/notes', async (req, res) => {
   try {
-    const data = JSON.parse(await readFile('derp.json', { encoding: 'utf8' }));
+    const data = JSON.parse(await readFile('data.json', { encoding: 'utf8' }));
     res.json(Object.values(data.notes));
   } catch (err) {
     console.log('error');
