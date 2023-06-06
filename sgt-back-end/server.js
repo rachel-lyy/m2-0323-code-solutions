@@ -12,7 +12,6 @@ const db = new pg.Pool({
   }
 });
 
-// GET / api / grades returns all rows from the "grades" table.The client should receive an array of objects.If there happens to be no rows, an empty array is ok.
 app.get('/api/grades', async (req, res) => {
   try {
     // sql query
@@ -28,7 +27,6 @@ app.get('/api/grades', async (req, res) => {
     res.status(500).json({ error: 'An unexpected error occured.' });
   }
 });
-// POST /api/grades, insert new grade and return created grade. should return an object
 
 app.post('/api/grades', async (req, res) => {
   try {
@@ -40,7 +38,7 @@ app.post('/api/grades', async (req, res) => {
       res.status(400).json({ error: 'name must be provided' });
     } else if (!course) {
       res.status(400).json({ error: 'course must be provided' });
-    } else if (!score || score <= 0 || score > 100) {
+    } else if (!Number.isInteger(score) || Number(score) < 0 || Number(score) > 100) {
       res.status(400).json({ error: 'score must be a positive integer' });
     } else {
     // sql query
@@ -61,7 +59,7 @@ app.post('/api/grades', async (req, res) => {
 app.get('/api/grades/:gradeId', async (req, res) => {
   try {
     const gradeId = Number(req.params.gradeId);
-    if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    if (!Number.isInteger(gradeId) || Number(gradeId) <= 0) {
       res.status(400).json({ error: '"gradeId" must be a positive integer' });
       return;
     }
@@ -89,13 +87,13 @@ app.put('/api/grades/:gradeId', async (req, res) => {
     const { name, course } = req.body;
     const score = Number(req.body.score);
     const gradeId = Number(req.params.gradeId);
-    if (!Number.isInteger(gradeId) || gradeId < 0) {
+    if (!Number.isInteger(gradeId) || Number(gradeId) <= 0) {
       res.status(400).json({ error: '"gradeId" must be a positive integer' });
     } else if (!name) {
       res.status(400).json({ error: 'name must be provided' });
     } else if (!course) {
       res.status(400).json({ error: 'course must be provided' });
-    } else if (score < 0 || score > 100) {
+    } else if (!Number(score) || Number(score) < 0 || Number(score) > 100) {
       res.status(400).json({ error: 'score must be a positive integer' });
     } else {
       const sql = `UPDATE "grades"
@@ -123,7 +121,7 @@ app.put('/api/grades/:gradeId', async (req, res) => {
 app.delete('/api/grades/:gradeId', async (req, res) => {
   try {
     const gradeId = Number(req.params.gradeId);
-    if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    if (!Number.isInteger(gradeId) || Number(gradeId) <= 0) {
       res.status(400).json({ error: '"gradeId" must be a positive integer' });
     }
     const sql = `DELETE
